@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 3px 3px 0 0;
+}
+
+.header-tab {
+  margin: 3px 15px;
+  color: #80bd01;
+}
+
+.header-tab:hover {
+  cursor: pointer;
+}
+
+.current-tab {
+  background-color: #80bd01;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 3px;
+}

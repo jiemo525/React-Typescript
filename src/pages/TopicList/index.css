@@ -1,0 +1,53 @@
+.topic-list {}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 0 10px 10px;
+  font-size: 14px;
+}
+
+.user-avatar {}
+
+.user-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.reply-count {
+  width: 100px;
+  text-align: center;
+}
+
+.last-time {
+  position: absolute;
+  right: 10px;
+}
+
+.topic_title_wrapper {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.topic_title_wrapper .topiclist-tab {
+  background-color: #e5e5e5;
+  color: #999;
+  padding: 2px 4px;
+  font-size: 14px;
+  margin: 0 20px 0 10px;
+}
+
+.topic-title {
+  color: #333;
+  text-decoration: none;
+}
+
+.pagination {
+  background-color: #fff;
+  padding: 10px 10px;
+  text-align: left;
+}
