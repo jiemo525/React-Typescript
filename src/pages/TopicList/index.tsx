@@ -1,14 +1,13 @@
 /**
- * @description 列表
+ * @description 话题列表
  */
 import * as React from 'react';
-import * as moment from 'moment';
+// import * as moment from 'moment';
 import { Pagination } from 'antd';
+import { Link } from 'react-router';
 import { getTopicList } from '../../utils/server';
+import { dateFromNow } from '../../utils/tools';
 import './index.css';
-
-
-
 interface IProps {
   tab: string
 };
@@ -106,11 +105,12 @@ class TopicList extends React.Component<IProps, IState> {
                 <span className='topiclist-tab'>
                   {item.top? '置顶':this.showTopicListTab(item.tab)}
                 </span>
-                <a href='/' className='topic-title'>{item.title}</a>
+                <Link to={`/topic/${item.id}`} className='topic-title'>{item.title}</Link>
               </div>
               <div className='last-time'>
                 {/* <img src={item.}/> */}
-                {moment(item.last_reply_at, 'YYYY-MM-DD').fromNow()}
+                {dateFromNow(item.last_reply_at)}
+                {/* {moment(item.last_reply_at, 'YYYY-MM-DD').fromNow()} */}
               </div>
             </div>
           ))

@@ -1,0 +1,33 @@
+.topic-detail {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+
+}
+
+.topic-detail-header {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.topiclist-tab {
+  background: #80bd01;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 8px;
+  vertical-align: bottom;
+}
+
+.topic-detail-title {
+  display: inline-block;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.topic-detail-content {
+  padding: 10px;
+}

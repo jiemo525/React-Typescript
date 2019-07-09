@@ -12,3 +12,7 @@ export const getTopicList = (params: ITopic) => {
   return axios.get(`${baseUrl}/topics?page=${params.page || 0}&tab=${params.tab || ''}&limit=${params.limit || 10}&mdrender=${params.mdrender || false}`)
   
 }
+
+export const getTopicDetail = (id: string) => {
+  return axios.get(`${baseUrl}/topic/${id}`)
+}
