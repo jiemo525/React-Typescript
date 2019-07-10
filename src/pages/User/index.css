@@ -1,0 +1,12 @@
+.user {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.user-infos {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}

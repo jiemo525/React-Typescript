@@ -1,13 +1,22 @@
+.light {
+  background-color: #f4fcf0;
+}
 .topic-detail {
   width: 1200px;
   margin: 0 auto;
-  background-color: #fff;
-
+  padding: 20px 0;
 }
 
 .topic-detail-header {
   padding: 10px;
   border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.topic-detail-changes {}
+
+.topic-detail-changes span:before {
+  content: "•";
 }
 
 .topiclist-tab {
@@ -30,4 +39,53 @@
 
 .topic-detail-content {
   padding: 10px;
+  background-color: #fff;
+}
+
+.topic-detail-reply {
+  background-color: #fff;
+  margin-top: 13px;
+}
+
+.topic-detail-reply-header {
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 3px 3px 0 0;
+}
+
+.topic-detail-cell {
+  border-top: 1px solid #f0f0f0;
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.topic-detail-user-avatar {}
+
+.topic-detail-user-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.user-info {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.reply-time {
+  font-size: 11px;
+  color: #08c;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.topic-detail-reply-content {
+  padding-left: 50px;
+}
+.topic-detail-up-count {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: gray;
 }

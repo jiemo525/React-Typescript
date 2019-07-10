@@ -96,7 +96,7 @@ class TopicList extends React.Component<IProps, IState> {
               className='cell'
             >
               <div className='user-avatar'>
-                <img src={item.author.avatar_url} />
+                <Link to={`/user/${item.author.loginname}`}><img src={item.author.avatar_url} /></Link>
               </div>
               <div className='reply-count'>
                 {item.reply_count}/{item.visit_count}
